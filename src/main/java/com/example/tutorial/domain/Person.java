@@ -9,7 +9,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Entity
 @Table(name = "people")
 public class Person extends AbstractPersistable<Long>{
-	private Person(){}
+	public Person(){}
 	public Person(String name){
 		this.name = name;
 	}

@@ -69,7 +69,7 @@ public class PersistenceConfig {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();  
         entityManagerFactoryBean.setDataSource(dataSource());  
         entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistence.class);  
-        entityManagerFactoryBean.setPackagesToScan("com.phillip.news.domain");  
+        entityManagerFactoryBean.setPackagesToScan("com.example.tutorial.domain");  
         entityManagerFactoryBean.setJpaProperties(hibernateProperties());  
           
         return entityManagerFactoryBean;  
