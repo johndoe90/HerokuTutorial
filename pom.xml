@@ -188,7 +188,7 @@
 		</dependency>     
 	</dependencies>
     <build>
-            <plugins>
+      <plugins>
         
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

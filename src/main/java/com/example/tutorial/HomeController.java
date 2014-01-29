@@ -24,7 +24,8 @@ import com.example.tutorial.repository.PersonRepository;
 public class HomeController {
 	
 	@Inject
-	private PersonRepository personRepo;
+	private PersonRepository personRepo;  
+	
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -33,7 +34,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("Welcome home! The client locale isss {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
