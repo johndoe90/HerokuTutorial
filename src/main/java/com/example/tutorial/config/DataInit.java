@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import com.example.tutorial.domain.Person;
 import com.example.tutorial.repository.PersonRepository;
 
-/*@Component
+@Component
 public class DataInit implements InitializingBean{
 
 	@Inject
@@ -25,4 +25,4 @@ public class DataInit implements InitializingBean{
 		personRepo.save(new Person("Josef"));		
 	}
 
-}*/
+}
