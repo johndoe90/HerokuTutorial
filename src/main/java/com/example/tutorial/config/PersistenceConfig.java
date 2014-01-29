@@ -37,6 +37,10 @@ public class PersistenceConfig {
 	@Bean
 	public DataSource dataSource(){		
 		BasicDataSource dataSource = new BasicDataSource();
+		/*dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/news");
+		dataSource.setUsername("postgres");
+		dataSource.setPassword("postgres");*/
 		
 		try{
 			URI dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -48,6 +52,7 @@ public class PersistenceConfig {
 			dataSource.setUrl(dbUrl);
 			dataSource.setUsername(username);
 			dataSource.setPassword(password);
+			dataSource.setDriverClassName("org.postgresql.Driver");
 		} catch (Exception e){
 			e.printStackTrace();
 		}
