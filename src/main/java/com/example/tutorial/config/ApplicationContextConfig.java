@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.example.tutorial")
-/*@PropertySource("classpath:com/example/tutorial/config/application.properties")*/
+@PropertySource("classpath:application.properties")
 public class ApplicationContextConfig extends WebMvcConfigurerAdapter{
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
